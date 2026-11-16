@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <!-- Lapas valoda, kodējums, mobilā skata iestatījums un nosaukums. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Virtuāla izstāde par Latvijas arhitektūru.">
+  <title>Latvijas arhitektūras virtuālā izstāde</title>
+  <!-- Pievieno ārējo CSS un JavaScript failu. -->
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <!-- Galvene ar izstādes nosaukumu un saitēm uz lapas sadaļām. -->
+  <header class="site-header">
+    <a class="logo" href="#sakums">Latvijas arhitektūra</a>
+    <nav aria-label="Galvenā navigācija">
+      <a href="#par-izstadi">Par izstādi</a>
+      <a href="#galerija">Galerija</a>
+      <a href="#karuselis">Karuselis</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Galvenā sadaļa ar izstādes virsrakstu, aprakstu un attēlu. -->
+    <section class="hero" id="sakums" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">Virtuālā izstāde · P25-1</p>
+        <h1 id="hero-title">Latvijas arhitektūra</h1>
+        <p>No viduslaiku pilīm līdz Rīgas jūgendstila namiem un mūsdienu ēkām.</p>
+        <a class="button" href="#galerija">Apskatīt izstādi ↓</a>
+      </div>
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/House%20of%20Blackheads%20Riga%20Latvia.jpg?width=960" alt="Melngalvju nams Rīgas vecpilsētā">
+    </section>
+
+    <!-- Sadaļa paskaidro izstādes mērķi un tēmu. -->
+    <section class="section about" id="par-izstadi" aria-labelledby="about-title">
+      <p class="eyebrow">Par izstādi</p>
+      <h2 id="about-title">Dažādi laiki, dažādas ēkas</h2>
+      <p>Izstādes mērķis ir iepazīstināt ar Latvijas arhitektūras daudzveidību. Apskatāmas pilis, vēsturiskas pilsētas, jūgendstila nami un mūsdienu arhitektūra. Vietējie attēli ir īstas fotogrāfijas.</p>
+    </section>
+
+    <!-- Deviņu objektu attēlu kolekcija ar nosaukumiem un īsiem aprakstiem. -->
+    <section class="section" id="galerija" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Attēlu kolekcija</p><h2 id="gallery-title">Deviņi arhitektūras objekti</h2></div>
+        <p>Izvēlēti objekti no dažādiem Latvijas novadiem un laikmetiem.</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-card">
+          <img src="assets/00-rigas-panorama.png" alt="Rīgas vecpilsēta un baznīcu torņi" loading="lazy">
+          <div><h3>Rīgas panorāma</h3><p>Skats uz Vecrīgas jumtiem, baznīcu torņiem un Daugavu.</p></div>
+        </article>
+        <article class="gallery-card">
+          <img src="assets/02-jugendstila-nams.png" alt="Dekorēta jūgendstila ēka Rīgā" loading="lazy">
+          <div><h3>Jūgendstila nams</h3><p>Rīgas fasādē redzami grezni rotājumi un zilas dekoratīvās detaļas.</p></div>
+        </article>
+        <article class="gallery-card">
+          <img src="assets/03-rundales-pils.png" alt="Rundāles pils un puķu dārzs" loading="lazy">
+          <div><h3>Rundāles pils</h3><p>18. gadsimta pils ansamblis ar dārzu Zemgalē.</p></div>
+        </article>
+        <article class="gallery-card">
+          <img src="assets/04-turaidas-pils.png" alt="Turaidas pils sarkano ķieģeļu torņi" loading="lazy">
+          <div><h3>Turaidas pils</h3><p>Viduslaiku pils Siguldā, kuras būvniecība sākās 1214. gadā.</p></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/House%20of%20Blackheads%20Riga%20Latvia.jpg?width=500" alt="Melngalvju nams Rīgas vecpilsētā" loading="lazy">
+          <div><h3>Melngalvju nams</h3><p>Rātslaukuma nams, kas pirmoreiz celts 14. gadsimtā un vēlāk vairākkārt pārbūvēts.</p></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Riga%20Cathedral%20%2823075759694%29.jpg?width=500" alt="Rīgas Doma katedrāle" loading="lazy">
+          <div><h3>Rīgas Doms</h3><p>Vēsturiska baznīca Vecrīgā ar atpazīstamu torni un plašu jumtu.</p></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/C%C4%93sis%20medieval%20castle.jpg?width=500" alt="Cēsu viduslaiku pils" loading="lazy">
+          <div><h3>Cēsu viduslaiku pils</h3><p>Pils komplekss stāsta par Cēsu un Latvijas vēsturi.</p></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kuld%C4%ABga%20brick%20bridge.jpg?width=500" alt="Ķieģeļu tilts pār Ventu Kuldīgā" loading="lazy">
+          <div><h3>Kuldīgas vecpilsēta</h3><p>Vēsturiskajā centrā redzama koka apbūve un 19. gadsimta ķieģeļu tilts.</p></div>
+        </article>
+        <article class="gallery-card">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/National%20Library%20of%20Latvia%20%2814628683686%29.jpg?width=500" alt="Latvijas Nacionālā bibliotēka jeb Gaismas pils" loading="lazy">
+          <div><h3>Gaismas pils</h3><p>Latvijas Nacionālās bibliotēkas ēku projektējis arhitekts Gunārs Birkerts.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Karuselis rāda tos pašus objektus; pogas un taimeris to pārslēdz. -->
+    <section class="section carousel-section" id="karuselis" aria-labelledby="carousel-title">
+      <p class="eyebrow">Interaktīvs elements</p>
+      <h2 id="carousel-title">Attēlu karuselis</h2>
+      <p>Attēli pārslēdzas automātiski. To var apturēt vai pārslēgt ar pogām.</p>
+      <figure class="carousel">
+        <img id="carousel-image" src="assets/00-rigas-panorama.png" alt="Rīgas vecpilsēta un baznīcu torņi">
+        <figcaption id="carousel-caption" aria-live="polite">1. attēls — Rīgas panorāma</figcaption>
+      </figure>
+      <div class="carousel-buttons">
+        <button id="previous-button" type="button" aria-label="Iepriekšējais attēls">← Iepriekšējais</button>
+        <button id="pause-button" type="button" aria-pressed="false">Apturēt automātisko maiņu</button>
+        <button id="next-button" type="button" aria-label="Nākamais attēls">Nākamais →</button>
+      </div>
+    </section>
+
+    <!-- Saites uz iestāžu un UNESCO informāciju par izvēlētajiem objektiem. -->
+    <section class="section sources" aria-labelledby="sources-title">
+      <p class="eyebrow">Papildu informācija</p>
+      <h2 id="sources-title">Avoti</h2>
+      <ul>
+        <li><a href="https://www.melngalvjunams.lv/lv/ekspozicija/vesture" target="_blank" rel="noreferrer">Melngalvju nama vēsture</a></li>
+        <li><a href="https://jugendstils.riga.lv/JugendstilsRiga/Architecture/" target="_blank" rel="noreferrer">Rīgas jūgendstila arhitektūra</a></li>
+        <li><a href="https://rundale.net/" target="_blank" rel="noreferrer">Rundāles pils muzejs</a></li>
+        <li><a href="https://tmr.gov.lv/lv/turaidas-vesturiskais-centrs" target="_blank" rel="noreferrer">Turaidas muzejrezervāts</a></li>
+        <li><a href="https://visit.cesis.lv/en/place/cesis-medieval-castle/?post_type=place" target="_blank" rel="noreferrer">Cēsu viduslaiku pils</a></li>
+        <li><a href="https://whc.unesco.org/en/list/1658/" target="_blank" rel="noreferrer">UNESCO: Kuldīgas vecpilsēta</a></li>
+        <li><a href="https://lnb.gov.lv/lv/gaismas-pils-eka/" target="_blank" rel="noreferrer">Latvijas Nacionālā bibliotēka: Gaismas pils</a></li>
+      </ul>
+      <h3>Fotogrāfiju autori un licences</h3>
+      <p>Noklikšķini uz nosaukuma, lai atvērtu fotogrāfiju vai tās avota lapu.</p>
+      <ul>
+        <li><a href="assets/00-rigas-panorama.png" target="_blank">Rīgas panorāma</a> — fotogrāfija.</li>
+        <li><a href="assets/02-jugendstila-nams.png" target="_blank">Jūgendstila nams</a> — fotogrāfija.</li>
+        <li><a href="assets/03-rundales-pils.png" target="_blank">Rundāles pils</a> — fotogrāfija.</li>
+        <li><a href="assets/04-turaidas-pils.png" target="_blank">Turaidas pils</a> — fotogrāfija.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:House_of_Blackheads_Riga_Latvia.jpg" target="_blank" rel="noreferrer">Melngalvju nams</a> — Ksenija Vinogradova, CC BY-SA 4.0.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Riga_Cathedral_(23075759694).jpg" target="_blank" rel="noreferrer">Rīgas Doms</a> — Jorge Láscar, CC BY 2.0.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:C%C4%93sis_medieval_castle.jpg" target="_blank" rel="noreferrer">Cēsu viduslaiku pils</a> — Laima Gūtmane, CC BY-SA 3.0.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:Kuld%C4%ABga_brick_bridge.jpg" target="_blank" rel="noreferrer">Kuldīgas ķieģeļu tilts</a> — Bernt Rostad, CC BY 2.0.</li>
+        <li><a href="https://commons.wikimedia.org/wiki/File:National_Library_of_Latvia_(14628683686).jpg" target="_blank" rel="noreferrer">Gaismas pils</a> — YuJeen, CC BY 2.0.</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Kājene ar komandas dalībniekiem, grupu un kontaktinformācijas vietu. -->
+  <footer class="site-footer">
+    <p><strong>Komanda:</strong> Somats Bečers, Arturs Valujevs · <strong>Grupa:</strong> P25-1</p>
+    <p>© 2026 · Praktisko mācību projekts</p>
+    <p><a href="https://www.latvia.travel/lv" target="_blank" rel="noreferrer">Papildu informācija par Latviju — Latvia Travel</a></p>
+  </footer>
+</body>
+</html>
