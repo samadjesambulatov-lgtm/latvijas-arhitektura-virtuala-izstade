@@ -26,5 +26,3 @@ Projekta pirmkods un izstrādes vēsture: https://github.com/samadjesambulatov-l
 
 ## Vietnes palaišana
 Atver `index.html` tīmekļa pārlūkā. Papildu serveris nav vajadzīgs. Wikimedia Commons fotogrāfiju ielādei nepieciešams internets. Četras fotogrāfijas atrodas projekta `assets` mapē.
-
-Pirms iesniegšanas pārbaudiet, vai norādītais darba sadalījums atbilst katra dalībnieka faktiskajam ieguldījumam.
