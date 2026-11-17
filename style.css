@@ -1,9 +1,8 @@
-/* Vienāds Box Model atvieglo elementu platuma un atkāpju aprēķināšanu. */
+
 * {
   box-sizing: border-box;
 }
 
-/* Pamatkrāsas, fonts un teksta rindu augstums visai vietnei. */
 body {
   margin: 0;
   color: #26342e;
@@ -16,14 +15,12 @@ a {
   color: #315d48;
 }
 
-/* Galvenes un kājenes kopīgais maksimālais platums un fons. */
 .site-header,
 .site-footer {
   padding: 16px max(20px, calc((100% - 1080px) / 2));
   background: #fff;
 }
 
-/* Flexbox novieto nosaukumu un navigāciju vienā rindā. */
 .site-header {
   display: flex;
   align-items: center;
@@ -48,13 +45,11 @@ nav a {
   text-decoration: none;
 }
 
-/* Galvenā satura platums un novietojums lapas vidū. */
 main {
   width: min(100% - 32px, 1080px);
   margin: 0 auto;
 }
 
-/* Sākuma sadaļā CSS Grid novieto tekstu un galveno attēlu blakus. */
 .hero {
   margin-top: 22px;
   padding: 28px;
@@ -87,7 +82,6 @@ main {
   text-transform: uppercase;
 }
 
-/* Poga ved uz galeriju; uzvedot kursoru, tās fons kļūst tumšāks. */
 .button,
 .carousel-buttons button {
   padding: 10px 14px;
@@ -104,7 +98,6 @@ main {
   background: #244735;
 }
 
-/* Sadaļu atstarpes un virsrakstu noformējums. */
 .section {
   padding: 38px 0;
 }
@@ -130,7 +123,6 @@ main {
   color: #5d6b64;
 }
 
-/* CSS Grid izkārto astoņas vienādi noformētas attēlu kartītes. */
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -164,7 +156,6 @@ main {
   color: #5d6b64;
 }
 
-/* Karuseļa attēls un tā paraksts ir centrēti. */
 .carousel-section {
   text-align: center;
 }
@@ -187,7 +178,6 @@ main {
   background: #e8eee7;
 }
 
-/* Flexbox centrē karuseļa pogas un atļauj tām pāriet jaunā rindā. */
 .carousel-buttons {
   display: flex;
   justify-content: center;
@@ -195,7 +185,6 @@ main {
   gap: 8px;
 }
 
-/* Avotu sadaļā saites ir viegli atrodamas un salasāmas. */
 .sources ul {
   padding-left: 22px;
 }
@@ -204,7 +193,6 @@ main {
   margin: 6px 0;
 }
 
-/* Kājene atdala autoru un grupas datus no galvenā satura. */
 .site-footer {
   border-top: 1px solid #ddd;
   text-align: center;
@@ -214,7 +202,6 @@ main {
   margin: 6px 0;
 }
 
-/* Vidēja izmēra ekrānos galerija rāda divas kolonnas. */
 @media (max-width: 800px) {
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -225,7 +212,6 @@ main {
   }
 }
 
-/* Telefonos navigācija un galerija sakārtojas vienā kolonnā. */
 @media (max-width: 520px) {
   .site-header,
   .section-heading {
