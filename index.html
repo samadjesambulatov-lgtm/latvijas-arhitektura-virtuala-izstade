@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-  <!-- Lapas valoda, kodējums, mobilā skata iestatījums un nosaukums. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Virtuāla izstāde par Latvijas arhitektūru.">
   <title>Latvijas arhitektūras virtuālā izstāde</title>
-  <!-- Pievieno ārējo CSS un JavaScript failu. -->
   <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
 <body>
-  <!-- Galvene ar izstādes nosaukumu un saitēm uz lapas sadaļām. -->
   <header class="site-header">
     <a class="logo" href="#sakums">Latvijas arhitektūra</a>
     <nav aria-label="Galvenā navigācija">
@@ -22,7 +19,6 @@
   </header>
 
   <main>
-    <!-- Galvenā sadaļa ar izstādes virsrakstu, aprakstu un attēlu. -->
     <section class="hero" id="sakums" aria-labelledby="hero-title">
       <div>
         <p class="eyebrow">Virtuālā izstāde · P25-1</p>
@@ -33,14 +29,12 @@
       <img src="https://commons.wikimedia.org/wiki/Special:FilePath/House%20of%20Blackheads%20Riga%20Latvia.jpg?width=960" alt="Melngalvju nams Rīgas vecpilsētā">
     </section>
 
-    <!-- Sadaļa paskaidro izstādes mērķi un tēmu. -->
     <section class="section about" id="par-izstadi" aria-labelledby="about-title">
       <p class="eyebrow">Par izstādi</p>
       <h2 id="about-title">Dažādi laiki, dažādas ēkas</h2>
       <p>Izstādes mērķis ir iepazīstināt ar Latvijas arhitektūras daudzveidību. Apskatāmas pilis, vēsturiskas pilsētas, jūgendstila nami un mūsdienu arhitektūra. Vietējie attēli ir īstas fotogrāfijas.</p>
     </section>
 
-    <!-- Deviņu objektu attēlu kolekcija ar nosaukumiem un īsiem aprakstiem. -->
     <section class="section" id="galerija" aria-labelledby="gallery-title">
       <div class="section-heading">
         <div><p class="eyebrow">Attēlu kolekcija</p><h2 id="gallery-title">Deviņi arhitektūras objekti</h2></div>
@@ -86,7 +80,6 @@
       </div>
     </section>
 
-    <!-- Karuselis rāda tos pašus objektus; pogas un taimeris to pārslēdz. -->
     <section class="section carousel-section" id="karuselis" aria-labelledby="carousel-title">
       <p class="eyebrow">Interaktīvs elements</p>
       <h2 id="carousel-title">Attēlu karuselis</h2>
@@ -101,8 +94,7 @@
         <button id="next-button" type="button" aria-label="Nākamais attēls">Nākamais →</button>
       </div>
     </section>
-
-    <!-- Saites uz iestāžu un UNESCO informāciju par izvēlētajiem objektiem. -->
+    
     <section class="section sources" aria-labelledby="sources-title">
       <p class="eyebrow">Papildu informācija</p>
       <h2 id="sources-title">Avoti</h2>
@@ -131,7 +123,6 @@
     </section>
   </main>
 
-  <!-- Kājene ar komandas dalībniekiem, grupu un kontaktinformācijas vietu. -->
   <footer class="site-footer">
     <p><strong>Komanda:</strong> Somats Bečers, Arturs Valujevs · <strong>Grupa:</strong> P25-1</p>
     <p>© 2026 · Praktisko mācību projekts</p>
